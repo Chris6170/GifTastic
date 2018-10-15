@@ -1,0 +1,25 @@
+input {
+    margin: 10px;
+  }
+
+  button{
+      margin: 5px;
+  }
+
+  img{
+
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+
+  body{
+      background-image: url(https://static1.squarespace.com/static/574dd66227d4bdb54a2f65e3/t/5a7e01e9c83025378b57a2ab/1529537583566/BL_1_podcast_v7_final_web_banner_Intro.jpg?format=2500w);
+      font-weight: bolder;
+  }
+
+
+  #movie-form{
+      margin-left: 30px;
+      
+  }
