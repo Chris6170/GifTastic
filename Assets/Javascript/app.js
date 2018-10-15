@@ -33,7 +33,7 @@ function displayMovieInfo() {
     method: "GET"
   }).then(function (response) {
 
-    gifResults.empty();
+    // gifResults.empty();
 
 
 
@@ -44,15 +44,19 @@ function displayMovieInfo() {
 
       var loop = response.data[i].images.original.url;
       var rating = response.data[i].rating;
-      var imgDiv = $("<div>");
+      var favBttn = $("<button>").html("Add to favorites");
+      var imgDiv = $("<div>").addClass(i);
       var gif = $("<img>").attr('src', loop);
-      var giftext = $("<p>").text(rating);
+      var giftext = $("<p>").html(rating);
+
     
-      // imgDiv.append(gif);
-      // imgDiv.append(giftext);
-      gifResults.append(gif);
-
-
+      
+      favBttn.addClass("btn btn-success");
+      imgDiv.append(gif);
+      imgDiv.append(giftext);
+      imgDiv.append(favBttn);
+      gifResults.prepend(imgDiv);
+     
       console.log(rating);
 
 
@@ -66,3 +70,13 @@ function displayMovieInfo() {
 }
 
 $(document).on("click", ".movie-btn", displayMovieInfo);
+
+$(".btn").on('click', function(){
+  
+console.log("yes");
+
+
+
+
+  
+})
