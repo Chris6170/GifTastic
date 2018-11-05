@@ -25,7 +25,7 @@ renderButtons();
 
 function displayMovieInfo() {
   var hero = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=HUOuIG8fZ9zsGq0poxvJTLT0eujOgUz1&limit=12";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=HUOuIG8fZ9zsGq0poxvJTLT0eujOgUz1&limit=12";
 
 
 
